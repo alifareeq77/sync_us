@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Video Sync Bridge",
+  "version": "0.1.0",
+  "description": "Sync a video element on the selected tab with another device via WebSocket backend.",
+  "permissions": ["tabs", "activeTab", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Video Sync",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

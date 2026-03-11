@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Video Sync</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Video Sync</h1>
+      <label>
+        Backend URL
+        <input id="backendUrl" value="ws://localhost:8080" />
+      </label>
+      <label>
+        Room
+        <input id="room" value="demo-room" />
+      </label>
+      <label>
+        Mode
+        <select id="mode">
+          <option value="host">Host (send tab video state)</option>
+          <option value="viewer">Viewer (follow remote state)</option>
+        </select>
+      </label>
+      <div class="actions">
+        <button id="start">Start</button>
+        <button id="stop" class="secondary">Stop</button>
+      </div>
+      <p id="status">Idle</p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  width: 320px;
+}
+
+main {
+  padding: 12px;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 4px;
+  padding: 8px;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+button.secondary {
+  background: #eee;
+}
+
+#status {
+  font-size: 12px;
+  margin: 10px 0 0;
+}
